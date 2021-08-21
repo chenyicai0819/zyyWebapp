@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { AtTabBar }  from 'taro-ui'
 import Taro from '@tarojs/taro'
+import {BASEURL} from '../../constants/global'
 
 class TabBar extends Component{
   constructor () {
@@ -50,12 +51,11 @@ class TabBar extends Component{
           backgroundColor='#ffffff'
           color='#cccccc'
           selectedColor='#d40000'
-          fontSize='20'
           tabList={[
-            { title: '首页'},
-            { title: '今日热点'},
-            { title: '健康档案'},
-            { title: '我的'}
+            { title: '首页',image:`${BASEURL}common/home.png`,selectedImage:`${BASEURL}common/homeSelected.png`},
+            { title: '今日热点',image:`${BASEURL}common/knowledge.png`,selectedImage:`${BASEURL}common/knowledgeSelected.png`},
+            { title: '健康档案',image:`${BASEURL}common/health.png`,selectedImage:`${BASEURL}common/healthSelected.png`},
+            { title: '我的',image:`${BASEURL}common/self.png`,selectedImage:`${BASEURL}common/selfSelected.png`}
           ]}
           onClick={this.handleClick.bind(this)}
           current={this.props.tabBarCurrent}

@@ -1,6 +1,6 @@
 import {Component} from "react";
 import TabBar from "../common/tabBar";
-
+import Registration from "../myRegistration/registration";
 
 class HotSpotIndex extends Component{
 

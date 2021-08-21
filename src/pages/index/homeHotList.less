@@ -1,0 +1,96 @@
+@import '../../constants/imageUrl.less';
+@HOMEHOTLISTIMG:'index/u225.png';
+
+.home-hot-title-content{
+  width: 100%;
+  height: 2rem;
+  background-image: url("@{IMAGEURL}@{HOMEHOTLISTIMG}");
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  //子元素在盒子里的对齐方式
+  justify-content:center;
+}
+.home-hot-title{
+  //设置文字间距
+  letter-spacing:0.3rem;
+  margin-left: 0.9rem;
+  color: #333333;
+  font-family: '方正小标宋简体', sans-serif;
+}
+.home-hot-more{
+  display: inline-block;
+  position: absolute;
+  right: 0.8rem;
+  cursor: pointer;
+  color: #99999f;
+}
+.home-hot-more-title{
+  font-size: 0.8rem;
+}
+.home-hot-contentList{
+  border-top: 1px solid #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+.hos-list{
+
+}
+.home-hot-content{
+  width: 100%;
+}
+.home-hot-item{
+
+}
+.at-article__img{
+
+}
+.hot-item-img{
+  width: 80%;
+  height: 3.8rem;
+  margin: 1.0rem 0.6rem;
+}
+.hot-item-text{
+
+}
+.home-hot-text{
+  margin-top: 1rem;
+  display: flex;
+  position: relative;
+}
+.home-hot-text-title-name{
+  width: 65%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.home-hot-text-title{
+  font-family: '微软雅黑', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #333333;
+  text-align: left;
+}
+.home-hot-date{
+  position: absolute;
+  right: 0.5rem;
+  font-family: '微软雅黑', sans-serif;
+  font-size: 0.9rem;
+  color: #7F7F7F;
+}
+
+.home-hot-intro{
+  font-family: '微软雅黑', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #7F7F7F;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  width: 99%;
+}

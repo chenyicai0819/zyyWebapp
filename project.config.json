@@ -4,9 +4,9 @@
   "description": "中医药小程序",
   "appid": "wxd3c24b7e40ae6891",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": false,
-    "enhance": true,
+    "enhance": false,
     "postcss": false,
     "preloadBackgroundData": false,
     "minified": false,
@@ -39,5 +39,6 @@
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",
+  "libVersion": "2.19.0",
   "condition": {}
 }

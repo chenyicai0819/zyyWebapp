@@ -4,6 +4,8 @@ import {View, Button, Text} from '@tarojs/components'
 import {AtSearchBar} from 'taro-ui'
 import './header.less'
 import './index.less'
+import {search} from "../../actions/search";
+import Taro from "@tarojs/taro";
 
 @connect(() => ({}), (dispatch) => ({
   search(keyword, condition, pageNum, pageSize) {
@@ -13,7 +15,7 @@ import './index.less'
 class Header extends Component {
   constructor() {
     console.log("执行了constructor")
-    super();
+    super(...arguments);
     this.state = {
       keyword: '',
       pageNum: 1,
